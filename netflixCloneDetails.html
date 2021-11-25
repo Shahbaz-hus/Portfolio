@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="locomotive-scroll.min.js"></script>
+    <link rel="stylesheet" href="locomotive-scroll.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <title>Netflix Clone</title>
+  </head>
+  <body>
+    <main id="swup" class="transition-fade">
+      <div data-scroll-container class="main-scroll-container">
+        <nav class="top-navbar">
+          <div class="logo">
+            <a href="./index.html#home">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 49 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Logo">
+                  <path
+                    id="right"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M48.9825 43.291H42.9198C42.9198 40.5646 42.7474 37.9046 42.9682 35.2776C43.1731 32.8595 42.3507 31.5106 40.2013 30.311C31.4249 25.4156 22.7657 20.3109 14.0673 15.2726C10.7598 13.3561 10.7255 7.05806 14.0014 5.14838C16.8134 3.50917 19.5832 1.78416 22.4838 0.318457C22.968 0.110326 23.4891 0.00202687 24.016 2.81794e-05C24.5429 -0.00197051 25.0648 0.102372 25.5505 0.306823C28.2056 1.61548 30.6359 3.39623 33.3133 4.6477C35.763 5.79156 36.7088 7.42496 36.334 10.0365C36.1887 11.0393 36.3107 12.0799 36.3107 13.6498C33.3443 11.967 30.8021 10.5362 28.271 9.08745C23.4176 6.3097 22.9919 6.35623 18.2252 10.4053L42.8074 24.6067V6.6926H48.9806L48.9825 43.291Z"
+                    fill="#D3D8FF"
+                  />
+                  <path
+                    id="left"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.1169 36.5877C15.9773 38.2327 18.9229 39.6412 21.5407 41.515C23.9594 43.2424 25.994 43.2158 28.2171 41.421C28.9474 40.8316 29.7955 40.39 31.0261 39.6014L5.99106 25.1199V43.1261H0V6.81128H5.89032C5.89032 9.72959 5.98718 12.676 5.854 15.6098C5.77311 17.3877 6.45068 18.3682 7.97048 19.2324C16.9692 24.3463 25.9185 29.548 34.8736 34.7366C38.0517 36.5784 38.0052 42.7873 34.8131 44.6538C32.1662 46.2048 29.4477 47.6395 26.8755 49.303C25.3581 50.2835 24.1633 50.2035 22.7074 49.2312C20.8786 48.0098 18.9074 47.0017 16.9992 45.898C12.1352 43.0844 11.9545 42.6564 13.1169 36.5877Z"
+                    fill="#D3D8FF"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <div class="menu-icon">
+            <?xml version="1.0" encoding="iso-8859-1"?>
+            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              id="navigation_svg"
+              onclick="showNavigationMenu()"
+              version="1.1"
+              height="32"
+              width="32"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 384.97 384.97"
+              style="enable-background: new 0 0 384.97 384.97"
+              xml:space="preserve"
+            >
+              <g>
+                <g id="Menu_1_">
+                  <path
+                    d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+            c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"
+                  />
+                  <path
+                    d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+            S379.58,180.455,372.939,180.455z"
+                  />
+                  <path
+                    d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606
+            c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z"
+                  />
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+            </svg>
+          </div>
+        </nav>
+
+        <div class="theme-changer-button-to-light" id="light_button">
+          <button type="button" name="button" onclick="change_to_light()">
+            <i class="fa fa-sun-o" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="theme-changer-button-to-dark" id="dark_button">
+          <button type="button" name="button" onclick="change_to_dark()">
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="section1" data-scroll-section>
+          <div class="project-Details-cover-image">
+            <img src="./images/projects/netflix_clone/cover/cover.png" alt="" />
+          </div>
+
+          <div class="project-Details-description">
+            <div class="content">
+              <h1>Netflix Clone</h1>
+              <br />
+              <p>
+                In this project I used the power of Flutter to create a web and
+                android version of my own netflix clone. Flutter makes it really
+                easy to create cross-platform apps and I believe it now more
+                than ever before. With virtually the same code, with minor
+                adjustments for different screen sizes we can create apps not
+                only for android or ios, but also for other platforms such as
+                Desktop, Televisions and even SmartWatches! This was the first
+                project where I used Firebase as backend and I was really amazed
+                by how convenient it is to use with flutter.
+              </p>
+              <br />
+            </div>
+
+            <a href="https://netflix-clone-1108.netlify.app/#/" target="_blank">
+              <button type="button" name="button">View Web Version</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="section2" data-scroll-section>
+          <section class="sec" id="projects">
+            <!-- <div class="project-Details-Cover-Image">
+              <img
+                src="./images/projects/netflix_clone/cover/cover.png"
+                alt=""
+                loading="lazy"
+              />
+            </div> -->
+
+            <div class="project-Details-main-area-left">
+              <div class="project-Details-main-area-text-left">
+                <h1>Login Screen</h1>
+                <p>
+                  This is the first screen a new user will see. It will ask for
+                  user credentials to log into the app. The authentication
+                  process is carried out by
+                  <strong>Firebase authentication services</strong>. If user
+                  doesn't have an account, a link given below takes the user to
+                  Sign Up screen.
+                </p>
+              </div>
+
+              <div class="project-Details-main-area-img">
+                <img
+                  src="./images/projects/netflix_clone/combined/login_screen.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="project-Details-main-area-right">
+              <div class="project-Details-main-area-img">
+                <img
+                  src="./images/projects/netflix_clone/combined/home_screen.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="project-Details-main-area-text-right">
+                <h1>Home Screen</h1>
+                <p>
+                  In the home screen, a user can find all the content uploaded
+                  on the app sorted by categories, as well as user's own watch
+                  history shown as "My List". If the user is an admin, they can
+                  see the Admin panel button just below the welcome message.
+                  This button is not shown to any user who is not an admin. I
+                  have shown the working of Admin panel in the descriptions
+                  below.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-Details-main-area-left">
+              <div class="project-Details-main-area-text-left">
+                <h1>Video Play Screen</h1>
+                <p>
+                  This screen is where the content will be played. It consists
+                  of a youtube video player package which requires URL of the
+                  video to be played. As we scroll down on the page, we see the
+                  content's description, the views of that content on the clone
+                  app and also a recommendation list based on the number of
+                  views. For the clone version, app only plays the trailers of
+                  content instead of originial episodes or movies.
+                </p>
+              </div>
+
+              <div class="project-Details-main-area-img">
+                <img
+                  src="./images/projects/netflix_clone/combined/watch_screen.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="project-Details-main-area-right">
+              <div class="project-Details-main-area-img">
+                <img
+                  src="./images/projects/netflix_clone/combined/see_all_grid_view.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="project-Details-main-area-text-right">
+                <h1>"See All" Grid Screen</h1>
+                <p>
+                  In front of each category on home screen, there is a button
+                  called "See All". This button takes us to the "See All" grid
+                  where all the content of that category is visible in a grid
+                  view instead of a list view. This screen is for the
+                  convenience of user.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-Details-main-area-left">
+              <div class="project-Details-main-area-text-left">
+                <h1>Search Screen</h1>
+                <p>
+                  This screen allows user to directly search content by name.
+                  User has to type full name of desired content.
+                </p>
+              </div>
+
+              <div class="project-Details-main-area-img">
+                <img
+                  src="./images/projects/netflix_clone/combined/search_screen.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="project-Details-main-area-right">
+              <div class="project-Details-main-area-img">
+                <img
+                  src="./images/projects/netflix_clone/combined/admin_panel_screen.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="project-Details-main-area-text-right">
+                <h1>Admin Panel</h1>
+                <p>
+                  This screen will only be available to the admin. From here the
+                  admin will have the option to add new content or update/delete
+                  some existing content. If admin wants to update some existing
+                  content, they will have to click on update content button and
+                  then search the name of content. After clicking on the found
+                  content, it will take admin to update content screen where all
+                  the fields will be pre filled with existing data. Admin can
+                  make changes or delete that content easily.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-Details-main-area-left">
+              <div class="project-Details-main-area-text-left">
+                <h1>Add New Content Screen</h1>
+                <p>
+                  This screen will allow admin to add new content. The fields
+                  required are
+                  <strong
+                    >content name, content image URL, content video URL</strong
+                  >
+                  and <strong>content description</strong>. After filling these
+                  fields, admin can select the genre of content from dropdown
+                  list. Finally clicking on "Add now" button will add the
+                  content to database and take admin back to the home screen.
+                </p>
+              </div>
+
+              <div class="project-Details-main-area-img">
+                <img
+                  src="./images/projects/netflix_clone/combined/add_new_content_screen.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="project-Details-main-area-right">
+              <div class="project-Details-main-area-img">
+                <img
+                  src="./images/projects/netflix_clone/combined/profile_screen.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="project-Details-main-area-text-right">
+                <h1>Profile Screen</h1>
+                <p>
+                  This screen will show
+                  <strong>user name, user's email address</strong>and
+                  <strong>user's contact number</strong>. If the user is an
+                  admin they will be shown an "Admin ✅" tag. Finally the screen
+                  will show the logout button to be used when user wants to
+                  leave the app.
+                </p>
+              </div>
+            </div>
+
+            <div class="colors-heading">
+              <h1>Colors used</h1>
+            </div>
+
+            <div class="project-Details-main-area-color-pallete">
+              <div class="color-with-code">
+                <div class="color-circle" style="background: #fd3f3f"></div>
+                <br />
+                <p>#FD3F3F</p>
+              </div>
+
+              <div class="color-with-code">
+                <div class="color-circle" style="background: #1db954"></div>
+                <br />
+                <p>#1DB954</p>
+              </div>
+
+              <div class="color-with-code">
+                <div class="color-circle" style="background: #ffffff"></div>
+                <br />
+                <p>#FFFFFF</p>
+              </div>
+
+              <div class="color-with-code">
+                <div class="color-circle" style="background: #252060"></div>
+                <br />
+                <p>#252060</p>
+              </div>
+
+              <div class="color-with-code">
+                <div class="color-circle" style="background: #8a0409"></div>
+                <br />
+                <p>#8A0409</p>
+              </div>
+
+              <div class="color-with-code">
+                <div class="color-circle" style="background: #8b8b8b"></div>
+                <br />
+                <p>#8B8B8B</p>
+              </div>
+            </div>
+
+            <div class="back-to-home">
+              <div class="back-to-home-rect">
+                <a href="./index.html"><p>← Back to home</p></a>
+              </div>
+            </div>
+
+            <div class="pseudo"></div>
+          </section>
+        </div>
+      </div>
+
+      <div class="navigation-menu-1" id="navigation-menu-1">
+        <button type="button" onclick="hideNavigationMenu()" name="button">
+          <p>x</p>
+        </button>
+
+        <div class="navigation-menu-1-nav-column">
+          <a onclick="hideNavigationMenu();toHome()" href="./index.html#home"
+            >Home</a
+          >
+          <br />
+          <a
+            onclick="hideNavigationMenu();toAbout()"
+            href="./index.html#aboutme_sec"
+            >About</a
+          >
+          <br />
+          <a
+            onclick="hideNavigationMenu();toProjects()"
+            href="./index.html#projects"
+            >Projects</a
+          >
+          <br />
+        </div>
+
+        <div class="navigation-menu-1-resume-column">
+          <a
+            href="https://drive.google.com/file/d/1RnGuYh6sfm5vseNyjGtgN08aWgpLuACP/view?usp=sharing"
+            target="_blank"
+            ><p><span>RESUME</span> 📗</p></a
+          >
+        </div>
+
+        <div class="navigation-menu-1-social-icons">
+          <p>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </p>
+        </div>
+      </div>
+
+      <span class="c-scrollbar">
+        <span class="c-scrollbar_thumb"> </span>
+      </span>
+    </main>
+
+    <script>
+      function toHome() {
+        // location.reload();
+        window.location = "./index.html#home";
+        location.reload();
+      }
+
+      function toAbout() {
+        // location.reload();
+        window.location = "./index.html#aboutme_sec";
+        location.reload();
+      }
+
+      function toProjects() {
+        // location.reload();
+        window.location = "./index.html#projects";
+        location.reload();
+      }
+    </script>
+
+    <script>
+      function openTab(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("aboutme");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "flex";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+
+    <script>
+      document.getElementById("dark_button").style.display = "none";
+
+      if (localStorage.getItem("theme_color") == null) {
+        localStorage.setItem("theme_color", "dark");
+      }
+
+      if (localStorage.getItem("theme_color") == "light") {
+        document.getElementById("dark_button").style.display = "block";
+        document.getElementById("light_button").style.display = "none";
+      }
+
+      document.documentElement.setAttribute(
+        "data-theme",
+        localStorage.getItem("theme_color")
+      );
+
+      function change_to_light() {
+        trans();
+        localStorage.setItem("theme_color", "light");
+        document.documentElement.setAttribute(
+          "data-theme",
+          localStorage.getItem("theme_color")
+        );
+        // document.documentElement.setAttribute('data-theme', 'light')
+        document.getElementById("dark_button").style.display = "block";
+        document.getElementById("light_button").style.display = "none";
+      }
+
+      function change_to_dark() {
+        trans();
+        localStorage.setItem("theme_color", "dark");
+        document.documentElement.setAttribute(
+          "data-theme",
+          localStorage.getItem("theme_color")
+        );
+        // document.documentElement.setAttribute('data-theme', 'dark')
+        document.getElementById("dark_button").style.display = "none";
+        document.getElementById("light_button").style.display = "block";
+      }
+
+      let trans = () => {
+        document.documentElement.classList.add("transition");
+        window.setTimeout(() => {
+          document.documentElement.classList.remove("transition");
+        }, 1000);
+      };
+    </script>
+
+    <script>
+      var menu1 = document.getElementById("navigation-menu-1");
+
+      function showNavigationMenu() {
+        menu1.style.display = "flex";
+        menu1.style.animation = "navigation_slide_left 0.7s ease";
+      }
+
+      function hideNavigationMenu() {
+        menu1.style.display = "none";
+      }
+    </script>
+
+    <script>
+      var textWrapper = document.querySelector(".ml11 .letters");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /([^\x00-\x80]|\w)/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime
+        .timeline({ loop: false })
+        .add({
+          targets: ".ml11 .line",
+          scaleY: [0, 1],
+          opacity: [0.5, 1],
+          easing: "easeOutExpo",
+          duration: 700,
+        })
+        .add({
+          targets: ".ml11 .line",
+          translateX: [
+            0,
+            document.querySelector(".ml11 .letters").getBoundingClientRect()
+              .width + 10,
+          ],
+          easing: "easeOutExpo",
+          duration: 700,
+        })
+        .add({
+          targets: ".ml11 .letter",
+          opacity: [0, 1],
+          easing: "easeOutExpo",
+          duration: 600,
+          offset: "-=775",
+          delay: (el, i) => 250 + 34 * (i + 1),
+        });
+    </script>
+
+    <script>
+      window.onload = function () {
+        if (!window.location.hash) {
+          console.log("Refreshing");
+          window.location = window.location + "#l";
+          window.location.reload();
+        }
+      };
+    </script>
+
+    <!-- PAGE TRANSITION ANIMATION STARTS -->
+
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script>
+      const swup = new Swup();
+    </script>
+
+    <!-- PAGE TRANSITION ANIMATION ENDS -->
+
+    <!-- PARALLAX SCROLLING STARTS-->
+
+    <script src="locomotive-scroll.min.js"></script>
+    <script>
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+        smartphone: {
+          smooth: false,
+        },
+        tablet: {
+          smooth: false,
+        },
+      });
+      console.log("ya");
+    </script>
+
+    <!-- PARALLAX SCROLLING ENDS-->
+  </body>
+</html>
